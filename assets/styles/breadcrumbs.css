@@ -27,3 +27,7 @@
     right: -20px;
     transform: translateY(-50%);
 }
+
+.breadcrumbs-item:last-child {
+    margin-right: 0;
+}

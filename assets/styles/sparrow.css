@@ -8,6 +8,10 @@
     margin-right: 40px;
 }
 
+.sparrow-about {
+    margin-bottom: 100px;
+}
+
 .sparrow-about-info {
     width: 610px;
 }
@@ -35,7 +39,6 @@
 .sparrow-food-variety {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
 
 .sparrow-food {
@@ -43,15 +46,16 @@
     border: 1px solid #F2F2F2;
     box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    padding: 20px 80px 47px 0px;
+    padding: 20px 0 47px 0;
     width: 650px;
+    position: relative;
 }
 
 .types-of-food {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-left: 75px;
+    padding: 0 80px;
     position: relative;
 }
 
@@ -73,56 +77,50 @@
     text-decoration: none;
 }
 
-.food-grains a:first-child::before {
-    content: "";
+.sparrow-food-button-right {
+    border: none;
     background-image: url(../images/arrow-left-green.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    position: absolute;
-    top: 32%;
-    left: 30px;
+    background-color: transparent;
 }
 
-.food-grains a:last-child::after {
-    content: "";
+.sparrow-food-button-left {
+    border: none;
     background-image: url(../images/arrow-right-green.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
+    background-color: transparent;
+}
+
+.food-grains-button-right {
     position: absolute;
     top: 31%;
-    right: -40px;
+    left: 25px;
 }
 
-.food-miks a:first-child::before {
-    content: "";
-    background-image: url(../images/arrow-left-green.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+.food-grains-button-left {
     position: absolute;
-    top: 27%;
-    left: 30px;
+    top: 31%;
+    right: 25px;
 }
 
-.food-miks a:last-child::after {
-    content: "";
-    background-image: url(../images/arrow-right-green.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+.food-miks-button-right {
     position: absolute;
     top: 27%;
-    right: -40px;
+    left: 25px;
+}
+
+.food-miks-button-left {
+    position: absolute;
+    top: 27%;
+    right: 25px;
 }
 
 .food-item img {

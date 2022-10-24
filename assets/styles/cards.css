@@ -1,9 +1,12 @@
+.cards {
+    margin-bottom: 50px;
+}
+
 .cards-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 46px;
-    margin-bottom: 50px;
 }
 
 .cards-list-birds {
@@ -101,8 +104,9 @@
 .card-package {
     width: 68px;
     height: 29px;
+    padding-top: 4px;
     background-color: transparent;
-    border: 0;
+    border: none;
     text-align: center;
     font-size: 18px;
     line-height: 21px;
@@ -114,6 +118,12 @@
 }
 
 .card-package-active {
+    background-color: #fff;
+    border: 1px solid #3ECF5E;
+    border-radius: 5px;
+}
+
+.card-packaging input:checked + .card-package {
     background-color: #fff;
     border: 1px solid #3ECF5E;
     border-radius: 5px;
@@ -154,12 +164,6 @@
     display: none;
 }
 
-.card-packaging input:checked + .card-package {
-    background-color: #fff;
-    border: 1px solid #3ECF5E;
-    border-radius: 5px;
-}
-
 .card-pages {
     display: flex;
     justify-content: center;
@@ -174,41 +178,37 @@
     line-height: 21px;
     color: #828282;
     margin-right: 20px;
-    position: relative;
+}
+
+.card-page-block a:nth-child(5) {
+    margin-right: 0;
 }
 
 .card-page-active {
     color: #219653;
 }
 
-.card-page:active {
-    color: #219653;
-}
-
-.card-page:first-child::before {
-    content: "";
-    background-image: url(../images/arrow-left-black.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.card-page-arrow-left {
     width: 16px;
     height: 16px;
+    display: inline-block;
     position: absolute;
-    top: 60%;
-    right: 30px;
-    margin-top: -10px;
+    top: 3px;
+    left: -30px;
 }
 
-.card-page:last-child::after {
-    content: "";
-    background-image: url(../images/arrow-right-black.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.card-page-arrow-right {
     width: 16px;
     height: 16px;
+    display: inline-block;
     position: absolute;
-    top: 60%;
-    left: 30px;
-    margin-top: -10px;
+    top: 2px;
+    right: -30px;
+}
+
+.card-page-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
