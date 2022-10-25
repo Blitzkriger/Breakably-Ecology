@@ -1,0 +1,16 @@
+$counterColor: #00C620;
+$mainBackgroundColor: #3FCF5E;
+$cursorPointer: pointer;
+
+@mixin font {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@mixin spanButton {
+    display: inline-block;
+    background-color: $counterColor;
+    width: 14px;
+    height: 1.33px;
+    border-radius: 2px;
+}

@@ -1,0 +1,228 @@
+.cart-main {
+    padding-top: 50px;
+    padding-bottom: 169px;
+}
+
+.back-cart {
+    margin-bottom: 30px;
+}
+
+.breadcrumbs-cart {
+    margin-bottom: 10px;
+}
+
+.cart-box {
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart-food-items-buy {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 25px 27px 25px;
+    border-bottom: 1px solid #F2F2F2;;
+}
+
+.cart-food-items-buy:nth-child(5) {
+    border-bottom: 0;
+}
+
+.cart-food-items {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cart-food-item {
+    margin-right: 15px;
+}
+
+.cart-food-item-name {
+    margin-bottom: 9px;
+    @include font;
+    font-weight: 600;
+    color: #333333;
+}
+
+.cart-food-item-article {
+    margin-bottom: 52px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #BDBDBD;
+}
+
+.cart-food-item-price {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #828282;
+}
+
+.cart-food-item-price strong {
+    @include font;
+    font-weight: 600;
+    color: #333333;
+}
+
+.cart-food-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-food-amount {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #BDBDBD;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-food-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cart-food-number {
+    @include font;
+    font-weight: 600;
+    color: #4F4F4F;
+    margin: 0 20px;
+}
+
+.cart-food-button-left {
+    cursor: $cursorPointer;
+    border: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    border: 1px solid $counterColor;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+
+    span {
+        @include spanButton;
+    }
+}
+
+.cart-food-button-right {
+    cursor: $cursorPointer;
+    border: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    border: 1px solid $counterColor;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+
+    span {
+        @include spanButton;
+    }
+}
+
+.vertical-item {
+    @include spanButton;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 48%;
+    right: 25%;
+}
+
+.donation {
+    background-color: $mainBackgroundColor;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 171px;
+}
+
+.donation-title {
+    @include font;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+
+.donation-input {
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 15px 0 15px 15px;
+    width: 234px;
+    outline: none;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #4F4F4F;
+}
+
+.donation-input::placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #4F4F4F;
+}
+
+.donation-button {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 0;
+    padding: 16px 40px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #333333;
+    cursor: $cursorPointer;
+}
+
+.cart-pay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-right: 25px;
+    background-color: #fff;
+}
+
+.cart-pay-button {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: 0;
+    background: $mainBackgroundColor;;
+    border-radius: 10px;
+    padding: 15px 66px 15px 66px;
+    cursor: $cursorPointer;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+
