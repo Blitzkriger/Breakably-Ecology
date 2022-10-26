@@ -88,6 +88,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .cart-food-number {
@@ -101,54 +107,28 @@
     cursor: $cursorPointer;
     border: 0;
     background-color: #fff;
-    border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0;
-    border: 1px solid $counterColor;
-    border-radius: 5px;
     width: 32px;
     height: 32px;
-
-    span {
-        @include spanButton;
-    }
 }
 
 .cart-food-button-right {
     cursor: $cursorPointer;
     border: 0;
     background-color: #fff;
-    border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0;
-    border: 1px solid $counterColor;
-    border-radius: 5px;
     width: 32px;
     height: 32px;
     position: relative;
-
-    span {
-        @include spanButton;
-    }
-}
-
-.vertical-item {
-    @include spanButton;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 48%;
-    right: 25%;
 }
 
 .donation {
     background-color: $mainBackgroundColor;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    padding-left: 171px;
+    padding: 40px 170px 50px 170px;
 }
 
 .donation-title {
@@ -195,9 +175,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    padding-right: 25px;
+    padding: 50px 25px 60px 25px;
     background-color: #fff;
 }
 

@@ -1130,6 +1130,11 @@ p, h1, h2, h3, h4, ul, li {
   align-items: center;
   margin-bottom: 30px;
 }
+.cart-food-counter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .cart-food-number {
   font-size: 24px;
@@ -1143,64 +1148,28 @@ p, h1, h2, h3, h4, ul, li {
   cursor: pointer;
   border: 0;
   background-color: #fff;
-  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0;
-  border: 1px solid #00C620;
-  border-radius: 5px;
   width: 32px;
   height: 32px;
-}
-.cart-food-button-left span {
-  display: inline-block;
-  background-color: #00C620;
-  width: 14px;
-  height: 1.33px;
-  border-radius: 2px;
 }
 
 .cart-food-button-right {
   cursor: pointer;
   border: 0;
   background-color: #fff;
-  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0;
-  border: 1px solid #00C620;
-  border-radius: 5px;
   width: 32px;
   height: 32px;
   position: relative;
 }
-.cart-food-button-right span {
-  display: inline-block;
-  background-color: #00C620;
-  width: 14px;
-  height: 1.33px;
-  border-radius: 2px;
-}
-
-.vertical-item {
-  display: inline-block;
-  background-color: #00C620;
-  width: 14px;
-  height: 1.33px;
-  border-radius: 2px;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 48%;
-  right: 25%;
-}
 
 .donation {
   background-color: #3FCF5E;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  padding-left: 171px;
+  padding: 40px 170px 50px 170px;
 }
 
 .donation-title {
@@ -1248,9 +1217,7 @@ p, h1, h2, h3, h4, ul, li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 60px;
-  padding-right: 25px;
+  padding: 50px 25px 60px 25px;
   background-color: #fff;
 }
 
